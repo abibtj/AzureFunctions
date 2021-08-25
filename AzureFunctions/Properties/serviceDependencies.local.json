@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights.sdk"
+    },
+    "storage1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/myteststorageaccountz",
+      "type": "storage.azure",
+      "connectionId": "AzureWebJobsStorage"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "signalr1": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/my-test-signalr",
+      "type": "signalr.function",
+      "connectionId": "Azure:SignalR:ConnectionString"
+    },
+    "signalr2": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/my-test-signalr",
+      "type": "signalr.function",
+      "connectionId": "Azure:SignalR:ConnectionString"
+    },
+    "signalr3": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/my-test-signalr",
+      "type": "signalr.function",
+      "connectionId": "Azure:SignalR:ConnectionString"
+    },
+    "signalr4": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/my-test-signalr",
+      "type": "signalr.function",
+      "connectionId": "Azure:SignalR:ConnectionString"
+    }
+  }
+}
